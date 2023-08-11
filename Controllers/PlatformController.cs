@@ -11,11 +11,11 @@ public class PlatformController : ControllerBase
 
     }
 
-    [HttpGet]
+    [HttpPost]
     public ActionResult TestInboundConnection()
     {
-        Console.WriteLine("-> inbound post service");
+        Console.WriteLine("🔽 -> received POST message!");
 
-        return Ok("inbouund working");
+        return Ok("alright! platform service is requested");
     }
 }
